@@ -19,7 +19,7 @@ const pool = new Pool({
 });
 
 app.get('/', (req, res) => {
-  res.send('✅ Backend funcionando - Tarea U3');
+  res.send('Backend funcionando - Tarea U3');
 });
 
 app.use(express.json());
