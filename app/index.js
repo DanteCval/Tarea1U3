@@ -18,6 +18,10 @@ const pool = new Pool({
   port: process.env.DB_PORT
 });
 
+app.get('/', (req, res) => {
+  res.send('✅ Backend funcionando - Tarea U3');
+});
+
 app.use(express.json());
 
 app.post('/register', async (req, res) => {
